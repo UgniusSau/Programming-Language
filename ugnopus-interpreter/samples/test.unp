@@ -1,0 +1,56 @@
+funkcijus(a:Intas, b: Intas) suma:Intas{
+    jeigu(a <= 1)
+    {
+        return a;
+    }
+    return a + b;
+}
+
+
+
+funkcijus(a:Intas) fibonacci:Intas{
+    jeigu(a <= 1)
+    {
+        return a;
+    }
+    Intas c = a - 1;
+    Intas b = a - 2;
+    return fibonacci(c) + fibonacci(b);
+}
+
+Intas q = 9;
+Intas z = 7;
+Intas rez = fibonacci(q);
+Stringas kva = "4";
+
+print(rez);
+print(suma(q, z ));
+
+
+
+funkcijus(a:Stringas) suma:Intas{
+    print(a);
+    return 5;
+}
+
+print(suma(kva));
+
+Bulynas b = readConsole();
+
+jeigu(b)
+{
+   print("reading value works");
+}
+
+Intas a = readConsole();
+
+a = a + 1;
+print(a);
+Stringas path = "C:\\Users\\Ugnius\\Desktop\\output.txt";
+
+out("C:\\Users\\Ugnius\\Desktop\\output.txt", a);
+
+Intas x = readFile("C:\\Users\\Ugnius\\Desktop\\output.txt");
+print(x);
+x = x + 1;
+print(x);
